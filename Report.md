@@ -40,5 +40,7 @@ The agent uses an Epsilon Greedy policy for action selection , meaning that it c
 
   This simple algorithm is able to train the agent pretty quickly (236 episodes in my case).
   The following graph represents the score of the agent over episodes :
+  
 ![Score][image2]
+
 The algorithm could be further improved by ,for example, changing the sampling of the steps used for learning. Currenly we sample uniformly from the Replay Buffer, but we could do prioritized experince replay, which means that we give higher weight more meaningful transitions, thus sampling them more frequently.
